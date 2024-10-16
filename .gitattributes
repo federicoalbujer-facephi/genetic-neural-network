@@ -1,0 +1,8 @@
+*           text eol=lf
+*.cmake     text
+*.py        text
+*.txt       text
+*.md        text
+*.gitignore text
+*.yml       text
+*.bat	    text eol=crlf

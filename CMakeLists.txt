@@ -5,7 +5,13 @@ include(CTest)
 enable_testing()
 
 include_directories(include)
-add_executable(genetic-neural-network src/main.cpp)
+
+set(SOURCES
+    src/main.cpp
+    src/neural_network/Neuron.cpp
+)
+
+add_executable(genetic-neural-network ${SOURCES})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
